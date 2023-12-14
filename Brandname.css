@@ -46,6 +46,10 @@
     list-style: none;
 }
 
+.font{
+    display: flex;
+    align-items: center;
+}
 .nav-end{
     display: flex;
     gap: 2rem;
@@ -718,6 +722,10 @@
         display: none;
     }
 
+    .navbar{
+        justify-content: space-between;
+    }
+
     .body-head-1, 
     .body-head-2,
     .main{
@@ -725,27 +733,33 @@
         flex-direction: column;
         gap: 2rem;
     }
-    .body
+
+    .testimonial-usercover{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .footer-2{
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .body-2{
+        justify-content: space-evenly;
+    }
+
+    .font{
+        color: rgb(151, 187, 123);
+        
+    }
 }
 
-@media screen and (max-width: 461px) {
-    .page{
-        width: 460px;
-        display: flow-root;
-    }
+@media screen and (min-width: 800px) {
 
-    .head{
-        width: 460px;
-        background-color: rgb(254, 242, 242);        
+    .font{
+        display: none;
     }
-
-    .navbar{
-        width: 460px;
-        display: flow-root;
-        gap: 1rem;
-        padding-left: 1rem;
-        padding-right: 3rem;
-        background-color: red;
-    }
-
+    
 }
